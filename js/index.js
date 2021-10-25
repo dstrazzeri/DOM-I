@@ -40,3 +40,47 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// NAV //
+
+let nav = document.querySelectorAll("nav a")
+for (let i = 0; i < nav.length; i++){
+  let index = "nav-item-" + (i + 1);
+  nav[i].textContent = siteContent["nav"][index];
+}
+
+const blogLink = document.createElement("a");
+blogLink.textContent = "Blog";
+blogLink.href = "#";
+document.querySelector("nav").appendChild(blogLink);
+blogLink.style.color = "green";
+
+const memeLink = document.createElement("a");
+memeLink.textContent = "Memes"
+memeLink.href = "#";
+document.querySelector("nav").prepend(memeLink);
+memeLink.style.color = "green";
+
+nav.forEach(nav => {
+  nav.style.color = "green";
+})
+
+// HEADER //
+
+const h1Content = document.querySelector(".cta h1")
+h1Content.innerHTML = "DOM<br>Is<br>Awesome";
+
+const ctaButton = document.querySelector(".cta button")
+ctaButton.textContent = siteContent["cta"]["button"];
+
+// HEADER IMG //
+
+const headerImg = document.getElementById("cta-img");
+headerImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+// TOP CONTENT //
+
+const featuresH4 = document.querySelector(".top-content:nth-child(1) h4");
+featuresH4.textContent = siteContent["main-content"]["features-h4"];
+const featuresP = document.querySelector(".top-content:nth-child(1) p");
+featuresP.textContent = siteContent["main-content"]["features-content"];
