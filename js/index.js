@@ -84,3 +84,46 @@ const featuresH4 = document.querySelector(".top-content:nth-child(1) h4");
 featuresH4.textContent = siteContent["main-content"]["features-h4"];
 const featuresP = document.querySelector(".top-content:nth-child(1) p");
 featuresP.textContent = siteContent["main-content"]["features-content"];
+
+const aboutH4 = document.querySelector(".top-content .text-content:nth-child(2) h4");
+aboutH4.textContent = siteContent["main-content"]["about-h4"];
+const aboutP = document.querySelector(".top-content .text-content:nth-child(2) p");
+aboutP.textContent = siteContent["main-content"]["about-content"];
+
+// MIDDLE IMAGE //
+
+let middleImg = document.getElementById("middle-img");
+middleImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+// BOTTOM CONTENT //
+
+const servicesH4 = document.querySelector(".bottom-content .text-content:nth-child(1) h4");
+servicesH4.textContent = siteContent["main-content"]["services-h4"];
+const servicesP = document.querySelector(".bottom-content .text-content:nth-child(1) p");
+servicesP.textContent = siteContent["main-content"]["services-content"];
+
+const productH4 = document.querySelector(".bottom-content .text-content:nth-child(2) h4");
+productH4.textContent = siteContent["main-content"]["product-h4"];
+const productP = document.querySelector(".bottom-content .text-content:nth-child(2) p");
+productP.textContent = siteContent["main-content"]["product-content"];
+
+const visionH4 = document.querySelector(".bottom-content .text-content:nth-child(3) h4");
+visionH4.textContent = siteContent["main-content"]["vision-h4"];
+const visionP = document.querySelector(".bottom-content .text-content:nth-child(3) p");
+visionP.textContent = siteContent["main-content"]["vision-content"];
+
+// CONTACT //
+
+const contactH4 = document.querySelector(".contact h4");
+contactH4.textContent = siteContent["contact"]["contact-h4"];
+const contactAddress = document.querySelector(".contact p:nth-of-type(1)");
+contactAddress.textContent = siteContent["contact"]["address"];
+const contactPhone = document.querySelector(".contact p:nth-of-type(2)");
+contactPhone.textContent = siteContent["contact"]["phone"];
+const contactEmail = document.querySelector(".contact p:nth-of-type(3)");
+contactEmail.textContent = siteContent["contact"]["email"];
+
+// FOOTER //
+
+const footer = document.querySelector("footer p");
+footer.textContent = siteContent["footer"]["copyright"];
